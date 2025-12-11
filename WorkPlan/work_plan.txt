@@ -1,0 +1,60 @@
+1. Introdução e Motivação
+As Ontologias OWL são ferramentas largamente utilizadas para a representação de conhecimento estruturado em diversos domínios, que incluem desde a história até à biomedicina. No entanto, a natureza destas ontologias é fundamentalmente estática: pressupõe-se que classes ou relações são válidas intemporalmente, pois carecem de mecanismos nativos para lidar com o decurso do tempo.
+Em domínios caracterizados pela sua dinamicidade — como, por exemplo, registos médicos, legislações, ou narrativas históricas — a ausência de uma dimensão temporal representa uma limitação significativa na
+capacidade de realizar raciocínios mais ricos.
+Esta limitação impede a resposta a questões temporais cruciais, como:
+Que leis estavam em vigor em 2010?
+Quem foi rei de Portugal numa dada data?
+Que paciente apresentou evolução clínica entre dois períodos?
+Esta tese tem como objetivo investigar modelos e métodos para incorporar a dimensão temporal em ontologias OWL. Serão avaliadas as suas vantagens e limitações no que concerne a expressividade, desempenho e a capacidade de deteção de inconsistências.
+
+A investigação será guiada pelas seguintes questões fundamentais, cuja resposta tem relevância para domínios dinâmicos como o legal:
+Q1: Qual a forma mais expressiva e eficiente de representar intervalos temporais numa ontologia OWL?
+Q2: Qual a diferença prática entre modelar o tempo como entidade explícita vs. anotação direta?
+Q3: Até que ponto é possível detetar inconsistências temporais (e.g., reinados que se prolongam após a morte de um monarca)
+Q4: Quais os custos em termos de desempenho ao realizar consultas temporais em ontologias de pequena, média e grande escala?
+
+
+2. Objetivos
+Objetivo geral: Investigar e propor abordagens para adicionar e explorar informação temporal em ontologias, focando-se na modelação de entidades, eventos e intervalos de tempo.
+Objetivos específicos:
+-. Estudar os padrões existentes de modelação temporal em OWL (e.g., W3C Time Ontology).
+/. Implementar e comparar diferentes abordagens de representação temporal: ◦ Intervalos como entidades (reificação de períodos de tempo). ◦ Propriedades de dados com datas (anotações diretas).
+0. Construir uma ontologia temporal aplicada ao domínio histórico da realeza portuguesa, abrangendo dados de dinastias, reinados, nascimentos, mortes e sucessões.
+1. Definir consultas e regras temporais para verificar a consistência dos dados e responder a questões históricas.
+3. Avaliar as abordagens implementadas em termos de: ◦ Correção dos resultados. ◦ Complexidade das consultas. ◦ Desempenho (tempo de resposta e consumo de memória). ◦ Capacidade de deteção de inconsistências.
+
+
+5. Resultados esperados
+Uma ontologia temporal histórica sobre a realeza portuguesa, disponível em formato RDF/OWL.
+Um conjunto de regras e consultas SPARQL para exploração temporal.
+Uma análise comparativa detalhada entre as diferentes estratégias de modelação temporal.
+Contributos metodológicos para a comunidade de ontologias no que respeita a boas práticas na modelação temporal.
+
+Os resultados da tese terão um impacto para além do domínio histórico, nomeadamente através dos seguintes contributos:
+Avanço no estudo da integração de temporalidade em OWL.
+Fornecimento de uma Metodologia replicável para outros domínios. Esta metodologia será de particular relevância para domínios que gerem dados dinâmicos e dependentes do tempo, como a medicina, o direito, e a IoT.
+Publicação de resultados em conferências de Web Semântica e Inteligência Artificial.
+
+
+4. Metodologia
+Revisão bibliográfica:
+Será realizada uma revisão de literatura sobre: ontologias temporais e a Time Ontology (W3C); raciocínio temporal em OWL, SWRL e SPARQL; e trabalhos em domínios históricos e biomédicos.
+Construção do dataset:
+O dataset envolverá a conversão de dados históricos da realeza portuguesa (do formato JSON para
+RDF/TTL). Serão criadas duas versões da ontologia, refletindo as abordagens a serem comparadas:
+a) Abordagem A: Modelagem de Intervalos como entidades (e.g., :Reign, time:Interval).
+b) Abordagem B: Uso de Datas como propriedades diretas (e.g., :reignStart, :reignEnd).
+Formulação de regras e consultas temporais:
+Serão formuladas regras de consistência, como, por exemplo, que reign.start >= birthDate e reign.end <= deathDate.
+Exemplos de perguntas a testar incluem: “Quem era o rei em 1450-06-01?” e “Que monarcas tiveram reinados sobrepostos?”.
+Testes e avaliação:
+Será definido um conjunto de consultas de teste (o gold standard).
+A avaliação medirá a precisão e completude dos resultados, o tempo de execução das consultas em diferentes tamanhos de dataset, e o número e tipo de inconsistências detetadas.
+Será realizada uma comparação detalhada entre a Abordagem A e a Abordagem B.
+Discussão e conclusões:
+A fase final incluirá a análise crítica dos resultados, a identificação dos pontos fortes e limitações de cada abordagem, e a formulação de recomendações que possam ser aplicadas a outros domínios que necessitem de raciocínio temporal.
+
+
+
+
