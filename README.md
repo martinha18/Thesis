@@ -28,10 +28,37 @@ See Thesis\research_thesis.md
 
 - Scholarcy - https://www.scholarcy.com/
 
+- scihub -> find articles through the code - https://sci-hub.se/
+
 
 ## Templates
 
 Ver discord quillfont canal tese
+
+
+## Artigos
+
+- https://www.semantic-web-journal.net/system/files/swj855.pdf
+
+- https://hal.science/hal-02465275v1/document
+
+- https://iaoa.org/isc2012/docs/Guarino2009_What_is_an_Ontology.pdf
+
+- https://trimc-nlp.blogspot.com/2013/08/nlp-driven-ontology-modeling-for.html
+
+- https://web.archive.org/web/20110719053241/https://kore-nordmann.de/talks/09_04_standardization_of_ontologies_paper.pdf
+
+- https://recipp.ipp.pt/entities/publication/92d1c666-efdc-407d-ab89-3ffd4e797e6c
+
+- https://repositorio.unicamp.br/Acervo/Detalhe/399530
+
+- https://repositorio.ufsc.br/xmlui/handle/123456789/168642
+
+- https://repositorio.utad.pt/entities/publication/c6e45726-5a2f-4ac6-b238-5135bcb2a478
+
+- https://repositorium.uminho.pt/entities/publication/db992ace-f77b-4f62-b7cc-03e09f32c472
+
+- https://repositorio.unesp.br/entities/publication/4053b2bd-18a6-4103-b06f-573fc47346f7
 
 
 ## Typst
